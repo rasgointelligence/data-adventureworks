@@ -1,0 +1,12 @@
+
+1. Create S3 bucket: s3://adventureworks-<your-uniquifier>
+
+2. Create policy to access bucket: arn:aws:iam::<your-account>:policy/adventureworks
+
+3. Create Role and grant policy to access bucket: arn:aws:iam::<your-account>:role/adventureworks
+
+4. Run `file 3_create_integration.sql` below then return to this file
+
+5. Edit Trust Relationship of role to include the user/key returned from DESCRIBE INTEGRATION statement
+
+6. Test that you can LIST from the Stage in Snowflake and move on with the install
